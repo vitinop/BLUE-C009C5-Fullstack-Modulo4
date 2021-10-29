@@ -6,9 +6,8 @@ import { User } from './entities/user.entity';
 export class UsersService {
   private users: User[] = [];
 
-
   create(createUserDto: CreateUserDto) {
-    const currentMaxId = this.users[this.users.length -1]?.id || 0;
+    const currentMaxId = this.users[this.users.length - 1]?.id || 0;
 
     const id = currentMaxId + 1;
 
@@ -26,13 +25,12 @@ export class UsersService {
   }
 
   findOne(id: number) {
-    const index = this.users.findIndex ( (user) => user.id === id);
-    
+    const index = this.users.findIndex((user) => user.id === id);
+
     return this.users[index];
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
-
     const user = this.findOne(id);
 
     const newUser = {
@@ -40,7 +38,7 @@ export class UsersService {
       ...updateUserDto,
     };
 
-    const index = this.users.findIndex ( (user) => user.id === id);
+    const index = this.users.findIndex((user) => user.id === id);
 
     this.users[index] = newUser;
 
@@ -48,7 +46,7 @@ export class UsersService {
   }
 
   remove(id: number) {
-    const index = this.users.findIndex ( (user) => user.id === id);
+    const index = this.users.findIndex((user) => user.id === id);
 
     this.users.splice(index, 1);
     return this.users;
