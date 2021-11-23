@@ -4,7 +4,7 @@ footer hr {
   
   .recommendations-container {
     width: 100%;
-    background-color: #171a21;
+    background-color: #181A21;
   }
   
   .recommendations {
@@ -15,14 +15,14 @@ footer hr {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: #171a21;
+    background-color: #000000;
     text-align: center;
   }
   .recommendations h1 {
     color: #67c1f5;
   }
   .recommendations h4 {
-    color: #c2c2c2;
+    color: #959EAB;
   }
   .recommendations .bold {
     color: white;
@@ -48,6 +48,7 @@ footer hr {
   }
   
   .legal {
+    background-color: #181A21 ;
     min-width: 950px;
     width: 950px;
     max-width: 950px;
@@ -58,7 +59,7 @@ footer hr {
   }
   .legal a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: #959EAB;
     margin: 5px;
     font-size: 12px;
   }
@@ -67,6 +68,7 @@ footer hr {
   }
   
   .legal-top {
+    color: #959EAB;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,4 +78,9 @@ footer hr {
   .legal-bottom {
     text-align: center;
     padding-bottom: 20px;
+  }
+
+  .legal img{
+    width: 13px;
+    
   }

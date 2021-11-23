@@ -1,18 +1,19 @@
 import "./Footer.css";
-
+import FacebookLogo from '../imgs/facebooklogo.png';
+import TwitterLogo from '../imgs/twitterlogo.png';
 function Footer() {
   return (
     <footer>
       <div className="recommendations-container">
         <div className="recommendations">
-          <h1>Looking for recommendations?</h1>
-          <hr />
-          <h4>Sign in to view personalized recommendations</h4>
+          <h1>Em busca de recomendações?</h1>
+         
+          <h4>Inicie a sessão para ver mais recomendações personalizadas</h4>
           <button type="button" name="button">
-            Sign in
+          Iniciar sessão
           </button>
           <h4>
-            or <span className="bold">sign up</span> and join Steam for free
+            ou <span className="bold">cadastre-se</span> no Steam gratuitamente
           </h4>
         </div>
       </div>
@@ -28,14 +29,14 @@ function Footer() {
             </div>
             <div className="legal-top-text">
               <p>
-                © 2018 Valve Corporation. All rights reserved. All trademarks
-                are property of their respective owners in the US and other
-                countries. VAT included in all prices where applicable.
+              © 2021 Valve Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos nos EUA e em outros países.
+              IVA incluso em todos os preços onde aplicável.   
               </p>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Legal</a>
-              <a href="#">Steam Subscriber Agreement</a>
-              <a href="#">Refunds</a>
+              <a href="#">Política de Privacidade  </a>
+              <a href="#">Termos Legais </a>
+              <a href="#">Acordo de Assinatura do Steam</a>
+              <a href="#">Reembolsos</a>
+              <a href="#">Cookies</a>
             </div>
             <img
               src="https://steamstore-a.akamaihd.net/public/images/v6/logo_steam_footer.png"
@@ -45,13 +46,13 @@ function Footer() {
           </div>
           <hr />
           <div className="legal-bottom">
-            <a href="#">About Valve</a>
+            <a href="#">Sobre a Valve</a>
+            <a href="#">Empregos</a>
             <a href="#">Steamworks</a>
-            <a href="#">Jobs</a>
-            <a href="#">Steam Distribution</a>
-            <a href="#">Gift Cards</a>
-            <a href="#">Steam</a>
-            <a href="#">@steam-games</a>
+            <a href="#">Distribuição no Steam</a>
+            <a href="#">Vales-presente </a>
+            <a href="#"><img src={FacebookLogo}/>Steam</a>
+            <a href="#"><img src={TwitterLogo}/>@steam</a>
           </div>
         </div>
       </div>
