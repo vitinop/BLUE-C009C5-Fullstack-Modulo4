@@ -1,21 +1,21 @@
-import './Main.css';
-import Header from '../header/Header';
-import Footer from '../foooter/Footer';
-import Sidenav from '../sidenav/Sidenav';
-import Subheader
- from '../subheader/Subheader';
+import "./Main.css";
+import Header from "../header/Header";
+import Footer from "../foooter/Footer";
+import Sidenav from "../sidenav/Sidenav";
+import Subheader from "../subheader/Subheader";
 function Main() {
-  return ( 
+  return (
     <div>
       <Header></Header>
-    <div className="Main">
-      <Subheader></Subheader>
-      <div className="Sidenav">
-      <Sidenav></Sidenav>
-      </div>
-      
-    </div>
-    <Footer></Footer>
+      <main>
+        <div className="MainBody">
+          <div className="Sidenav">
+            <Sidenav></Sidenav>
+            <Subheader></Subheader>
+          </div>
+        </div>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }

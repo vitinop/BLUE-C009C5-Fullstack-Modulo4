@@ -46,7 +46,9 @@ footer hr {
     text-shadow: 0px 0px 1px yellow;
     box-shadow: 0px 0px 1px yellow;
   }
-  
+  .legal-container{
+    background-color: #181A21;
+  }
   .legal {
     background-color: #181A21 ;
     min-width: 950px;

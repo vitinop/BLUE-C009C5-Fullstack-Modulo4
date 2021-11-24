@@ -2,6 +2,7 @@
     position: absolute;
     display: block;
     width: 210px;
+    z-index: 2;
 }
 .sidenav_header{
     margin: 15px 0px 7px;
