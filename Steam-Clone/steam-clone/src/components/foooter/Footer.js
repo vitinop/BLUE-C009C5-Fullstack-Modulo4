@@ -1,6 +1,8 @@
-import "./Footer.css";
-import FacebookLogo from '../imgs/facebooklogo.png';
-import TwitterLogo from '../imgs/twitterlogo.png';
+import './Footer.css';
+import FacebookLogo from '../imgs/icons/facebooklogo.png';
+import TwitterLogo from '../imgs/icons/twitterlogo.png';
+import SteamLogoFooter from '../imgs/footerLogoSteam.png';
+import ValveLogoFooter from '../imgs/footerLogoValve.png';
 function Footer() {
   return (
     <footer>
@@ -22,12 +24,13 @@ function Footer() {
           <div className="legal-top">
             <div className="footer_valve">
               <img
-                src="https://steamstore-a.akamaihd.net/public/images/v6/logo_valve_footer.png"
+                src={ValveLogoFooter}
                 alt="Valve Software"
                 border="0"
               />
             </div>
             <div className="legal-top-text">
+              <hr/>
               <p>
               © 2021 Valve Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos nos EUA e em outros países.
               IVA incluso em todos os preços onde aplicável.   
@@ -39,8 +42,8 @@ function Footer() {
               <a href="#">Cookies</a>
             </div>
             <img
-              src="https://steamstore-a.akamaihd.net/public/images/v6/logo_steam_footer.png"
-              alt="Valve Software"
+              src={SteamLogoFooter}
+              alt="Steam Software"
               border="0"
             />
           </div>
@@ -51,8 +54,8 @@ function Footer() {
             <a href="#">Steamworks</a>
             <a href="#">Distribuição no Steam</a>
             <a href="#">Vales-presente </a>
-            <a href="#"><img src={FacebookLogo}/>Steam</a>
-            <a href="#"><img src={TwitterLogo}/>@steam</a>
+            <a href="https://www.facebook.com/Steam"><img src={FacebookLogo}/>Steam</a>
+            <a href="https://twitter.com/steam"><img src={TwitterLogo}/>@steam</a>
           </div>
         </div>
       </div>

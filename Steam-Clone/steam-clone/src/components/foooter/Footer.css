@@ -80,7 +80,11 @@ footer hr {
     padding-bottom: 20px;
   }
 
-  .legal img{
+  .legal-bottom img{
     width: 13px;
     
+  }
+
+  .footer_valve img{
+    width: 88px;
   }
