@@ -13,38 +13,10 @@
   }
 }
 
-body {
-  background-image: linear-gradient(to bottom, #020a17, #0c1421, #111c2b, #172336, #1c2b41, #1c2b40, #1b2b40, #1b2b3f, #162332, #111b26, #0a131a, #00060d);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  margin: 0;
-}
 
-.App-header {
-  background-color: #181A21;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
 .MainBody{
   margin-right:270px ;
   margin-top: 30px;

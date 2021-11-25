@@ -6,13 +6,21 @@ import Header from "../src/components/header/Header.js";
 import Footer from "../src/components/foooter/Footer";
 import Home from "./pages/Home/Home.js";
 import GameView from "./pages/GameView/GameView";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import MyProfile from"./pages/Profile/MyProfile"
+import WishList from"./pages/WishList/WishList"
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/game" element={<GameView />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/myprofile" element={<MyProfile />} />
+        <Route path="/wishlist" element={<WishList />} />
       </Routes>
     </BrowserRouter>
     <Footer />

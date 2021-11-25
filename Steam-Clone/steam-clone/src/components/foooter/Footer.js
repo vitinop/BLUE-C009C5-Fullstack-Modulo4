@@ -3,22 +3,10 @@ import FacebookLogo from '../imgs/icons/facebooklogo.png';
 import TwitterLogo from '../imgs/icons/twitterlogo.png';
 import SteamLogoFooter from '../imgs/footerLogoSteam.png';
 import ValveLogoFooter from '../imgs/footerLogoValve.png';
-function Footer() {
+export default function Footer() {
   return (
     <footer>
-      <div className="recommendations-container">
-        <div className="recommendations">
-          <h1>Em busca de recomendações?</h1>
-         
-          <h4>Inicie a sessão para ver mais recomendações personalizadas</h4>
-          <button type="button" name="button">
-          Iniciar sessão
-          </button>
-          <h4>
-            ou <span className="bold">cadastre-se</span> no Steam gratuitamente
-          </h4>
-        </div>
-      </div>
+
       <div className="legal-container">
         <div className="legal">
           <div className="legal-top">
@@ -63,4 +51,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+
