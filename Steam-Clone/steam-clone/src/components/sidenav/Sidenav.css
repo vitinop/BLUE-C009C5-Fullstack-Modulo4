@@ -1,8 +1,9 @@
 .sidenavBlock{
-    position: absolute;
-    display: block;
+    padding-right:120px ;
+    position:relative;
+    display: inline-block;
     width: 210px;
-    z-index: 2;
+    
 }
 .sidenav_header{
     margin: 15px 0px 7px;

@@ -45,3 +45,15 @@ body {
     transform: rotate(360deg);
   }
 }
+.MainBody{
+  margin-right:270px ;
+  margin-top: 30px;
+}
+.TotalBody{
+  display: flex;
+  justify-content: center;
+
+}
+.SliderSection{
+  margin-top:40px;
+}

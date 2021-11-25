@@ -1,7 +1,6 @@
 .SubheaderBlock {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    
     background: linear-gradient(120deg, #3B6290, #0E216E);
     height: 50px;
     width: 940px;
