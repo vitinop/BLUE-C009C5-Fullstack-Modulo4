@@ -6,11 +6,11 @@ function Header(){
         <header className="header-container">
         <div className="header">
         <div class="left-header">
-            <img src={Greylogo} alt='Steam logo'/>
+        <a href="/"><img src={Greylogo} alt='Steam logo'/></a>
                 
         <div className="header-links">
-            <a href="#">LOJA</a>
-            <a href="#">COMUNIDADE</a>
+            <a href="/">LOJA</a>
+            <a href="/myprofile">COMUNIDADE</a>
             <a href="#">SOBRE</a>
             <a href="#">SUPORTE</a>
         </div>
@@ -21,7 +21,7 @@ function Header(){
     </div>
     <div className="right-header">
         <button type="button"><i className="fas fa-download"></i> Instale o Steam</button>
-        <a href="#">Iniciar sessão</a><a href="#">|</a>
+        <a href="/login">Iniciar sessão</a><a href="#">|</a>
         <a href="#"> Idioma <i className="fas fa-sort-down"></i></a>
     </div>
     </div>
