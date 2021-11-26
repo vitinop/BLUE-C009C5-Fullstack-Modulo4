@@ -16,7 +16,8 @@ export default function Home() {
   const getData = async ()=>{
     await axios.get('/game/findMany')
     .then(response =>{
-      setGames(response.data)
+      if(mounted){
+      setGames(response.data)}
     })
   }
   useEffect(() => {
@@ -37,16 +38,13 @@ export default function Home() {
             <div className="SliderSection">
             <h4>Destaques e Recomendados</h4>
             {
-                games.map( game => (
                   <Slidermain
                     id='4f969d05-ee63-4153-8bb4-66a55818e2ef'                    
                     id2='98508fea-7b83-4a20-ae3d-0e0abf2bb117'
-                    id3='98508fea-7b83-4a20-ae3d-0e0abf2bb117'
-                    
-                    
-                    />
-                ))
-              
+                    id3='949c61f7-49fe-4007-84ba-d6c1e1435a40'
+                    id4='08014b08-6cbc-4c49-b5b9-1886fd44c2ac'
+                    preco='12.00'
+                    /> 
             }
             </div>
             <h4>Itens da Loja</h4>
