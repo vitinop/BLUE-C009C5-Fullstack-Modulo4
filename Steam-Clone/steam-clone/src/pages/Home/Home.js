@@ -54,6 +54,7 @@ export default function Home() {
               {
                 games.map( game => (
                   <Card
+                    id={game.id}
                     image={game.image}
                     name={game.name}
                     preco={game.price}
