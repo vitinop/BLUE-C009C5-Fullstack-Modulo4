@@ -33,6 +33,7 @@ export default function MyProfile(props) {
         !notLogged ? (
           <>
             <h2>{user.name}</h2>
+            <a href="wishlist"><h2>Minha Lista de Desejos</h2></a>
             <span>Email: {user.email}</span>
             <span>Membro desde: {user.createdAt}</span>
           </>
