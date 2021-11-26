@@ -10,6 +10,11 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import MyProfile from"./pages/Profile/MyProfile"
 import WishList from"./pages/WishList/WishList"
+import axios from 'axios';
+
+axios.defaults.baseURL ='https://nintendo-shop.herokuapp.com';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+
 ReactDOM.render(
   <React.StrictMode>
     <Header />

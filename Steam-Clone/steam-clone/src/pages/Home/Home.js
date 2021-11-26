@@ -3,7 +3,28 @@ import Sidenav from "../../components/sidenav/Sidenav.js";
 import Subheader from "../../components/subheader/Subheader.js";
 import Slidermain from "../../components/slidermain/Slidermain.js";
 import Subfooter from "../../components/foooter/Subfooter";
+import Card from "../../components/card/card";
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+
 export default function Home() {
+
+  const[games,setGames] = useState([]);
+  const [mounted,setMounted]=useState(false);
+
+  const getData = async ()=>{
+    await axios.get('/game/findMany')
+    .then(response =>{
+      setGames(response.data)
+    })
+  }
+  useEffect(() => {
+    setMounted(true)
+    getData()
+  }, [mounted])
+   
+ 
   return (
     <div>
       <main>
@@ -14,7 +35,34 @@ export default function Home() {
           <div className="MainBody">
             <Subheader></Subheader>
             <div className="SliderSection">
-              <Slidermain/>
+            <h4>Destaques e Recomendados</h4>
+            {
+                games.map( game => (
+                  <Slidermain
+                    id='4f969d05-ee63-4153-8bb4-66a55818e2ef'                    
+                    id2='98508fea-7b83-4a20-ae3d-0e0abf2bb117'
+                    id3='98508fea-7b83-4a20-ae3d-0e0abf2bb117'
+                    
+                    
+                    />
+                ))
+              
+            }
+            </div>
+            <h4>Itens da Loja</h4>
+
+            <div className="CardsSection">
+            
+              {
+                games.map( game => (
+                  <Card
+                    image={game.image}
+                    name={game.name}
+                    preco={game.price}
+                    key={game.name}
+                    />
+                ))
+              } 
             </div>
           </div>
         </div>
