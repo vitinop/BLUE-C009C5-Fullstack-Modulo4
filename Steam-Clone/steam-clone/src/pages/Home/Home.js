@@ -39,10 +39,10 @@ export default function Home() {
             <h4>Destaques e Recomendados</h4>
             {
                   <Slidermain
-                    id='4f969d05-ee63-4153-8bb4-66a55818e2ef'                    
-                    id2='98508fea-7b83-4a20-ae3d-0e0abf2bb117'
-                    id3='949c61f7-49fe-4007-84ba-d6c1e1435a40'
-                    id4='08014b08-6cbc-4c49-b5b9-1886fd44c2ac'
+                    id='b1ef3772-5067-48d0-a6ff-5b44c27c2c7b'                    
+                    id2='9654f94c-9e2e-4bfb-a6b7-838381032375'
+                    id3='1191aaab-5b49-44a3-a88f-e82889b3598d'
+                    id4='0c97ef4c-a927-46ed-a620-a1b030a798da'
                     preco='12.00'
                     /> 
             }
